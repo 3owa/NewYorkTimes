@@ -90,8 +90,6 @@ fun DetailsScreen(navController: NavController,imgUrl:String,title:String,date:S
                 style = MaterialTheme.typography.titleLarge,
                 modifier = Modifier
                     .padding(10.dp),
-                maxLines = 2,
-                overflow = TextOverflow.Ellipsis
             )
 
             Text(
@@ -99,9 +97,7 @@ fun DetailsScreen(navController: NavController,imgUrl:String,title:String,date:S
                 color = Color.Gray,
                 style = MaterialTheme.typography.titleMedium,
                 modifier = Modifier
-                    .padding(10.dp),
-                maxLines = 1,
-                overflow = TextOverflow.Ellipsis
+                    .padding(10.dp)
             )
 
             FlowRow() {

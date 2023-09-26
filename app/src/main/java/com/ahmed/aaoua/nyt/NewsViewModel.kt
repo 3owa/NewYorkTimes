@@ -1,6 +1,8 @@
 package com.ahmed.aaoua.nyt
 
 
+import android.content.Context
+import android.widget.Toast
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.ahmed.aaoua.nyt.api.NYTApiResponse
@@ -17,6 +19,9 @@ class NewsViewModel(private val repository: Repository) : ViewModel() {
 
     init {
         fetchNews()
+        if(news.value != null){
+            Toast.makeText(this as Context, news.value!!.copyright.toString(), Toast.LENGTH_SHORT).show()
+        }
     }
 
     private fun fetchNews() {

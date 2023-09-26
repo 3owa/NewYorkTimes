@@ -53,7 +53,7 @@ fun HomeScreen(navController: NavController) {
                     text = "New York Times",
                     color = Color.Black,
                     fontFamily = NYTFont,
-                    fontSize = 40.sp
+                    fontSize = 30.sp
                 )
             }
         },
